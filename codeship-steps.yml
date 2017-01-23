@@ -1,0 +1,3 @@
+- name: test-greg
+  service: http_test
+  command: ./http.sh

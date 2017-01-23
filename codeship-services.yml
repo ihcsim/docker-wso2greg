@@ -1,0 +1,16 @@
+greg:
+  build:
+    image: isim/wso2greg
+    dockerfile: Dockerfile
+    args:
+      VCS_REF: 67d155b
+  cached: true
+
+http_test:
+  build:
+    dockerfile: Dockerfile-HttpTest
+  environment:
+    GREG_HOST: greg
+  links:
+    - greg
+  cached: true

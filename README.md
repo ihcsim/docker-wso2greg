@@ -1,13 +1,15 @@
-### wso2greg
+# docker-wso2greg
+
+[ ![Codeship Status for ihcsim/docker-wso2greg](https://app.codeship.com/projects/d50dc1d0-c3c1-0134-67c4-568c48fe7308/status?branch=master)](https://app.codeship.com/projects/197734)
 
 Docker image to install and run WSO2 Governance Registry.
 
-### Tags
+## Tags
 
-* [5.1.0, latest](https://github.com/ihcsim/docker-wso2greg/tree/5.1.0)
+* [5.3.0, latest](https://github.com/ihcsim/docker-wso2greg/tree/5.3.0)
+* [5.1.0](https://github.com/ihcsim/docker-wso2greg/tree/5.1.0)
 
-### Description
-
+## Description
 The dockerfile will:
 * Use `wget` to pull the Governance Registry 5.1.0 ZIP from a S3 bucket into the container `/opt` folder.
 * Install `zip`.
@@ -17,12 +19,12 @@ The dockerfile will:
 * Set the `wso2server.sh` start-up script as the container entrypoint.
 
 
-### Usage
+## Usage
+To run the WSO Governance Registry:
+```sh
+$ docker run -d --name greg -p 9443:9443 isim/wso2greg
+```
+To access the web admin console, navigate to https://localhost:9443/carbon using your web browser.
 
-* To pull: `docker pull isim/wso2greg`
-* To run: `docker run --rm --name <container_name> -p 9443:9443 -p 9763:9763 isim/wso2greg`
-* To access the web admin console, navigate to `https://localhost:9443/carbon`
-
-Follow me on [![alt text][1.1]][1]
-[1.1]: http://i.imgur.com/tXSoThF.png (twitter icon with padding)
-[1]: http://www.twitter.com/IvanHCSIM
+## License
+Refer to the [LICENSE](LICENSE) file. WSO2 license can be found [here](http://wso2.com/licenses).
