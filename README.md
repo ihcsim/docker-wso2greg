@@ -1,13 +1,8 @@
 # docker-wso2greg
 
-[ ![Codeship Status for ihcsim/docker-wso2greg](https://app.codeship.com/projects/d50dc1d0-c3c1-0134-67c4-568c48fe7308/status?branch=master)](https://app.codeship.com/projects/197734)
+[ ![Codeship Status for ihcsim/docker-wso2greg](https://app.codeship.com/projects/d50dc1d0-c3c1-0134-67c4-568c48fe7308/status?branch=master)](https://app.codeship.com/projects/197734) [![](https://images.microbadger.com/badges/version/isim/wso2greg:5.3.0.svg)](https://microbadger.com/images/isim/wso2greg:5.3.0 "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/commit/isim/wso2greg:5.3.0.svg)](https://microbadger.com/images/isim/wso2greg:5.3.0 "Get your own commit badge on microbadger.com") [![](https://images.microbadger.com/badges/image/isim/wso2greg:5.3.0.svg)](https://microbadger.com/images/isim/wso2greg:5.3.0 "Get your own image badge on microbadger.com")
 
 Docker image to install and run WSO2 Governance Registry.
-
-## Tags
-
-* [5.3.0, latest](https://github.com/ihcsim/docker-wso2greg/tree/5.3.0)
-* [5.1.0](https://github.com/ihcsim/docker-wso2greg/tree/5.1.0)
 
 ## Description
 The dockerfile will:
